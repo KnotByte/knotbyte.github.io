@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+body {
+  font-family: Poppins, sans-serif !important;
+  line-height: 1.8;
+  font-weight: 200;
+}
+
+.full-screen {
+  background-color: rgb(29, 27, 28) !important;
+  height: 100vh;
+}
+
+.logo {
+  display: block;
+  max-width: 450px;
+  margin: auto;
+}
+
+.slogan {
+  /* background-color: orange; */
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 2em;
+  text-shadow: rgba(0, 0, 0, 0.8);
+  padding: 10px 1em 10px 1em;
+  border-radius: 5px;
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
+  max-width: 500px;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 14px;
+  color: white;
+  margin-right: 2em;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul > li {
+  display: inline;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+nav > ul > li:hover {
+  border-bottom: 2px solid orange;
+  color: orange;
+}
+
+.box {
+  display: flex;
+  margin-top: 5em;
+  max-width: 80%;
+  background-color: whitesmoke;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -8px;
+  float: 0 45%;
+}
+
+.social > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social > ul > li {
+  color: white;
+  display: inline;
+  font-size: 30px;
+  padding: 0px 15px 0px 15px;
+}
+
+.social > ul > li :hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.rotate {
+  background-color: orange !important;
+  position: absolute;
+  /* bottom: 400px; */
+  top: 95vh;
+  height: 50%;
+  background: white;
+  transform: rotate(20deg);
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.rotate:hover {
+  height: 340px;
+  transition: 0.5s;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  padding: 3em;
+}
+
+a {
+  color: white !important;
+}
+
+@media (max-width: 760px) {
+  .logo {
+    max-width: 300px;
+  }
+
+  .slogan {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .slogan {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .logo {
+    max-width: 250px;
+  }
+
+  .slogan {
+    font-size: 0.6rem;
+  }
+}
