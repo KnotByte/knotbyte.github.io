@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#myvideo {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.vid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50vw;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.hero-elmnt {
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 15vw;
+  text-align: center;
+}
+
+.hero-elmnt img {
+  width: 35%;
+}
+
+.hero-elmnt h2 {
+  color: white;
+  margin-top: 2%;
+  padding: 1% 0;
+  font-weight: 500;
+  font-size: 1.5vw;
+  border-top: 0.2vw solid orange;
+  border-bottom: 0.2vw solid orange;
+  border-radius: 0.5vw;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social > ul > li {
+  display: inline;
+  font-size: 2.1vw;
+  padding: 1.5% 1.3% 0;
+}
+
+.social > ul > li a {
+  color: #fff;
+}
+
+.social > ul > li :hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  z-index: 100;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 21px;
+  display: none;
+}
+
+.toggle-button .bar {
+  height: 3.5px;
+  width: 100%;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.nav img {
+  width: 60px;
+  padding: 15px 0;
+}
+
+.menu {
+  height: 100%;
+}
+
+.menu > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > ul > li {
+  list-style: none;
+}
+
+.menu > ul > li a {
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.menu > ul > li a:hover {
+  color: orange;
+}
+
+.menu > ul > li.active a {
+  color: orange;
+}
+
+.heading {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-left {
+  flex: 40%;
+  padding: 10px;
+}
+
+.flex-left img {
+  width: 90%;
+  height: auto;
+  border: 1.5vw solid white;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-right {
+  flex: 40%;
+}
+
+.flex-right h3 {
+  padding-top: 30px;
+}
+
+.flex-right p {
+  padding-top: 15px;
+  line-height: 150%;
+}
+
+.flex-right h2 {
+  padding-top: 15px;
+}
+
+.flex-right > ul > li {
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+.about-left {
+  flex: 40%;
+}
+
+.serv h3 {
+  padding-bottom: 10px;
+}
+.serv p {
+  padding-bottom: 50px;
+}
+
+.serv i {
+  color: orange;
+  float: left;
+  height: 40px;
+  padding-top: 15px;
+}
+
+.serv p {
+  margin-left: 80px;
+}
+
+.about-right {
+  flex: 40%;
+}
+
+.about-right img {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+
+.clients {
+  background-color: #e8e8e8;
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.clients img {
+  height: 120px;
+  display: inline;
+  padding-right: 80px;
+}
+
+.team {
+  text-align: center;
+}
+
+.profile {
+  display: inline-block;
+  flex: 30%;
+  margin-right: 80px;
+}
+
+.profile img {
+  height: 15vw;
+  border-radius: 4px;
+  border: 2px solid orange;
+  padding: 5px;
+}
+
+.profile h5 {
+  padding-top: 12px;
+  text-transform: uppercase;
+  font-size: 1vw;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.profile h6 {
+  color: orange;
+  padding-top: 3px;
+  font-size: 0.8vw;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.contact {
+  background-color: #eaf2e3;
+  margin-top: 100px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.form {
+  display: block;
+  text-align: center;
+}
+
+input[type="text"],
+textarea,
+input[type="email"] {
+  width: 60%;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type="submit"] {
+  background-color: orange;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: none;
+}
+
+.footer {
+  background-color: #272727;
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 200;
+  font-size: 2vh;
+}
+
+@media screen and (max-width: 960px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .clients img {
+    height: 70px;
+    padding-right: 20px;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu ul li {
+    text-align: center;
+  }
+
+  .menu ul li a {
+    padding: 0.75rem 1rem;
+  }
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .nav img {
+    width: 50px;
+    padding: 10px 0;
+    float: left;
+  }
+
+  .about {
+    display: block;
+    margin: auto;
+  }
+
+  .profile {
+    display: inline-block;
+    flex: 20%;
+    margin-right: 5px;
+  }
+
+  .profile img {
+    height: 23vw;
+  }
+
+  .profile h5 {
+    padding-top: 5px;
+    font-size: 1.8vw;
+  }
+
+  .profile h6 {
+    color: orange;
+    padding-top: 3px;
+    font-size: 1.2vw;
+  }
+
+  .about-right img {
+    padding: 10px 0;
+  }
+
+  .heading {
+    padding: 60px 0;
+  }
+
+  .contact {
+    margin-top: 60px;
+  }
+
+  input[type="text"],
+  textarea,
+  input[type="email"] {
+    width: 80%;
+  }
+
+  .footer p {
+    font-size: 1vh;
+  }
+}
